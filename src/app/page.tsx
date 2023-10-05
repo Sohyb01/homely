@@ -1,113 +1,261 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="min-h-[100vh]">
+      {/* Hero Section */}
+      <section className="section__styles flex flex-col lg:flex-row-reverse items-center gap-8 pt-[36px] md:pt-[72px] pb-[72px]">
+        {/* Hero Image Container */}
+        <div className="relative aspect-square w-full">
+          <Image fill src="/../hero-image.jpg" alt="Hero Image" />
         </div>
+        {/* Header, Paragraph, and Buttons */}
+        <div className="flex flex-col w-full text-start items-start gap-8">
+          {/* Header */}
+          <h1 className="heading text-4xl text-neutral-800">
+            We help home renovation businesses get{" "}
+            <span className="text-emerald-500 heading">more clients</span>
+          </h1>
+          {/* Paragraph and Buttons */}
+          <div className="flex flex-col w-full text-start items-start gap-8 lg:gap-16">
+            {/* Paragraph */}
+            <p className="text-xl text-neutral-800">
+              <b>Get discovered and build trust </b> with customers with a
+              high-performing website especially crafted for your home
+              renovation business
+            </p>
+            {/* Buttons */}
+            <div className="flex gap-4">
+              {/* Button Link */}
+              <a className="cta-one rounded-[3px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <path
+                    d="M15.9765 12.5933L15.2499 15.7432C15.1478 16.1885 14.7564 16.5 14.2979 16.5C6.41311 16.4994 0 10.0872 0 2.20322C0 1.74512 0.311561 1.35327 0.756947 1.25171L3.90724 0.525183C4.36604 0.418876 4.83483 0.656988 5.02548 1.0914L6.47936 4.48186C6.64932 4.88121 6.53468 5.3465 6.19871 5.62086L4.51605 6.97173C5.57803 9.13475 7.33694 10.8934 9.5009 11.9559L10.8785 10.2747C11.1501 9.93783 11.6189 9.82128 12.0183 9.99424L15.4093 11.4476C15.8171 11.6621 16.0828 12.1371 15.9765 12.5933Z"
+                    fill="white"
+                  />
+                </svg>
+                <span className="text-md">Get in Touch</span>
+              </a>
+              <a className="button-one rounded-[3px]">
+                <span className="text-md">How it works</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Mobile Green BG Part */}
+      <div className="bg-emerald-900 lg:hidden">
+        <section className="section__styles flex flex-col lg:flex-row-reverse items-start gap-[108px] lg:gap-20 lg:py-[72px]">
+          {/* Header, Divider, Paragraph */}
+          <div className="flex flex-col text-start items-start relative py-[72px] w-full gap-6 max-w-[506px]">
+            <h2 className="heading text-3xl text-white z-[2]">
+              A{" "}
+              <span className="text-emerald-300 heading">high-performing</span>{" "}
+              website is the difference between a visit and a{" "}
+              <span className="text-emerald-300 heading">sale</span> 💸
+            </h2>
+            {/* Green Border */}
+            <div className="h-[2px] bg-emerald-400 w-16 rounded-full z-[2]"></div>
+            <p className="text-white text-xl z-[2]">
+              A high-performing website doesn&apos;t just look great, it acts
+              like a 24/7 lead generation machine for your business.
+            </p>
+          </div>
+        </section>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* High Performing Section */}
+      <section className="section__styles flex flex-col lg:flex-row items-start pt-[36px] pb-[72px] relative lg:gap-12">
+        {/* Side Banner */}
+        <div className="hidden lg:flex bg-emerald-900 w-full p-[32px] pl-10 rounded-[16px]">
+          {/* Header, Divider, Paragraph */}
+          <div className="flex flex-col text-start items-start relative w-full gap-6">
+            <h2 className="heading text-3xl text-white z-[2]">
+              A{" "}
+              <span className="text-emerald-300 heading">high-performing</span>{" "}
+              website is the difference between a visit and a{" "}
+              <span className="text-emerald-300 heading">sale</span> 💸
+            </h2>
+            {/* Green Border */}
+            <div className="h-[2px] bg-emerald-400 w-16 rounded-full z-[2]"></div>
+            <p className="text-white text-xl z-[2]">
+              A high-performing website doesn&apos;t just look great, it acts
+              like a 24/7 lead generation machine for your business.
+            </p>
+          </div>
+        </div>
+        {/* Paragraphs Container */}
+        <div className="flex flex-col items-start gap-8 lg:w-full lg:max-w-[496px]">
+          {/* Paragraph */}
+          <div className="text-neutral-800 w-full text-lg flex flex-col gap-3 max-w-[504px]">
+            <p>A high-performing website:</p>
+            {/* Bullet Points */}
+            <div className="flex flex-col gap-3 text-start w-full font-bold">
+              <div className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M23.4675 10.9884L21.8354 9.09285C21.5233 8.73294 21.2713 8.06111 21.2713 7.58123V5.54174C21.2713 4.27006 20.2273 3.22632 18.9552 3.22632H16.9151C16.447 3.22632 15.763 2.97438 15.403 2.66246L13.5069 1.03087C12.6788 0.323044 11.3227 0.323044 10.4827 1.03087L8.59852 2.67446C8.2385 2.97438 7.55445 3.22632 7.08643 3.22632H5.0103C3.73822 3.22632 2.69416 4.27006 2.69416 5.54174V7.59322C2.69416 8.06111 2.44215 8.73294 2.14213 9.09285L0.522031 11.0004C-0.17401 11.8282 -0.17401 13.1718 0.522031 13.9996L2.14213 15.9072C2.44215 16.2671 2.69416 16.9389 2.69416 17.4068V19.4583C2.69416 20.7299 3.73822 21.7737 5.0103 21.7737H7.08643C7.55445 21.7737 8.2385 22.0256 8.59852 22.3375L10.4947 23.9691C11.3227 24.677 12.6788 24.677 13.5189 23.9691L15.415 22.3375C15.775 22.0256 16.447 21.7737 16.9271 21.7737H18.9672C20.2393 21.7737 21.2833 20.7299 21.2833 19.4583V17.4188C21.2833 16.9509 21.5353 16.2671 21.8474 15.9072L23.4795 14.0116C24.1755 13.1838 24.1755 11.8162 23.4675 10.9884ZM16.9871 10.2326L11.1907 16.0271C11.0227 16.1951 10.7947 16.2911 10.5547 16.2911C10.3147 16.2911 10.0867 16.1951 9.91864 16.0271L7.01442 13.1239C6.6664 12.7759 6.6664 12.2001 7.01442 11.8522C7.36244 11.5043 7.93848 11.5043 8.2865 11.8522L10.5547 14.1196L15.715 8.96088C16.063 8.61297 16.639 8.61297 16.9871 8.96088C17.3351 9.30879 17.3351 9.88465 16.9871 10.2326Z"
+                    fill="#047857"
+                  />
+                </svg>
+                <p>Helps customers discover you</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M23.4675 10.9884L21.8354 9.09285C21.5233 8.73294 21.2713 8.06111 21.2713 7.58123V5.54174C21.2713 4.27006 20.2273 3.22632 18.9552 3.22632H16.9151C16.447 3.22632 15.763 2.97438 15.403 2.66246L13.5069 1.03087C12.6788 0.323044 11.3227 0.323044 10.4827 1.03087L8.59852 2.67446C8.2385 2.97438 7.55445 3.22632 7.08643 3.22632H5.0103C3.73822 3.22632 2.69416 4.27006 2.69416 5.54174V7.59322C2.69416 8.06111 2.44215 8.73294 2.14213 9.09285L0.522031 11.0004C-0.17401 11.8282 -0.17401 13.1718 0.522031 13.9996L2.14213 15.9072C2.44215 16.2671 2.69416 16.9389 2.69416 17.4068V19.4583C2.69416 20.7299 3.73822 21.7737 5.0103 21.7737H7.08643C7.55445 21.7737 8.2385 22.0256 8.59852 22.3375L10.4947 23.9691C11.3227 24.677 12.6788 24.677 13.5189 23.9691L15.415 22.3375C15.775 22.0256 16.447 21.7737 16.9271 21.7737H18.9672C20.2393 21.7737 21.2833 20.7299 21.2833 19.4583V17.4188C21.2833 16.9509 21.5353 16.2671 21.8474 15.9072L23.4795 14.0116C24.1755 13.1838 24.1755 11.8162 23.4675 10.9884ZM16.9871 10.2326L11.1907 16.0271C11.0227 16.1951 10.7947 16.2911 10.5547 16.2911C10.3147 16.2911 10.0867 16.1951 9.91864 16.0271L7.01442 13.1239C6.6664 12.7759 6.6664 12.2001 7.01442 11.8522C7.36244 11.5043 7.93848 11.5043 8.2865 11.8522L10.5547 14.1196L15.715 8.96088C16.063 8.61297 16.639 8.61297 16.9871 8.96088C17.3351 9.30879 17.3351 9.88465 16.9871 10.2326Z"
+                    fill="#047857"
+                  />
+                </svg>
+                <p>Builds trust with your customers</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M23.4675 10.9884L21.8354 9.09285C21.5233 8.73294 21.2713 8.06111 21.2713 7.58123V5.54174C21.2713 4.27006 20.2273 3.22632 18.9552 3.22632H16.9151C16.447 3.22632 15.763 2.97438 15.403 2.66246L13.5069 1.03087C12.6788 0.323044 11.3227 0.323044 10.4827 1.03087L8.59852 2.67446C8.2385 2.97438 7.55445 3.22632 7.08643 3.22632H5.0103C3.73822 3.22632 2.69416 4.27006 2.69416 5.54174V7.59322C2.69416 8.06111 2.44215 8.73294 2.14213 9.09285L0.522031 11.0004C-0.17401 11.8282 -0.17401 13.1718 0.522031 13.9996L2.14213 15.9072C2.44215 16.2671 2.69416 16.9389 2.69416 17.4068V19.4583C2.69416 20.7299 3.73822 21.7737 5.0103 21.7737H7.08643C7.55445 21.7737 8.2385 22.0256 8.59852 22.3375L10.4947 23.9691C11.3227 24.677 12.6788 24.677 13.5189 23.9691L15.415 22.3375C15.775 22.0256 16.447 21.7737 16.9271 21.7737H18.9672C20.2393 21.7737 21.2833 20.7299 21.2833 19.4583V17.4188C21.2833 16.9509 21.5353 16.2671 21.8474 15.9072L23.4795 14.0116C24.1755 13.1838 24.1755 11.8162 23.4675 10.9884ZM16.9871 10.2326L11.1907 16.0271C11.0227 16.1951 10.7947 16.2911 10.5547 16.2911C10.3147 16.2911 10.0867 16.1951 9.91864 16.0271L7.01442 13.1239C6.6664 12.7759 6.6664 12.2001 7.01442 11.8522C7.36244 11.5043 7.93848 11.5043 8.2865 11.8522L10.5547 14.1196L15.715 8.96088C16.063 8.61297 16.639 8.61297 16.9871 8.96088C17.3351 9.30879 17.3351 9.88465 16.9871 10.2326Z"
+                    fill="#047857"
+                  />
+                </svg>
+                <p>More leads, more sales</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M23.4675 10.9884L21.8354 9.09285C21.5233 8.73294 21.2713 8.06111 21.2713 7.58123V5.54174C21.2713 4.27006 20.2273 3.22632 18.9552 3.22632H16.9151C16.447 3.22632 15.763 2.97438 15.403 2.66246L13.5069 1.03087C12.6788 0.323044 11.3227 0.323044 10.4827 1.03087L8.59852 2.67446C8.2385 2.97438 7.55445 3.22632 7.08643 3.22632H5.0103C3.73822 3.22632 2.69416 4.27006 2.69416 5.54174V7.59322C2.69416 8.06111 2.44215 8.73294 2.14213 9.09285L0.522031 11.0004C-0.17401 11.8282 -0.17401 13.1718 0.522031 13.9996L2.14213 15.9072C2.44215 16.2671 2.69416 16.9389 2.69416 17.4068V19.4583C2.69416 20.7299 3.73822 21.7737 5.0103 21.7737H7.08643C7.55445 21.7737 8.2385 22.0256 8.59852 22.3375L10.4947 23.9691C11.3227 24.677 12.6788 24.677 13.5189 23.9691L15.415 22.3375C15.775 22.0256 16.447 21.7737 16.9271 21.7737H18.9672C20.2393 21.7737 21.2833 20.7299 21.2833 19.4583V17.4188C21.2833 16.9509 21.5353 16.2671 21.8474 15.9072L23.4795 14.0116C24.1755 13.1838 24.1755 11.8162 23.4675 10.9884ZM16.9871 10.2326L11.1907 16.0271C11.0227 16.1951 10.7947 16.2911 10.5547 16.2911C10.3147 16.2911 10.0867 16.1951 9.91864 16.0271L7.01442 13.1239C6.6664 12.7759 6.6664 12.2001 7.01442 11.8522C7.36244 11.5043 7.93848 11.5043 8.2865 11.8522L10.5547 14.1196L15.715 8.96088C16.063 8.61297 16.639 8.61297 16.9871 8.96088C17.3351 9.30879 17.3351 9.88465 16.9871 10.2326Z"
+                    fill="#047857"
+                  />
+                </svg>
+                <p>Gives you a more powerful online presence</p>
+              </div>
+            </div>
+          </div>
+          {/* Paragraph */}
+          <div className="text-neutral-800 w-full text-lg flex flex-col gap-3 max-w-[504px]">
+            <p>
+              Your high-performing website will achieve all of this through
+              intentional design towards building trust with clients.
+            </p>
+          </div>
+          {/* Paragraph */}
+          <div className="text-neutral-800 w-full text-lg flex flex-col gap-3 max-w-[504px]">
+            <p>
+              A well-designed, intentional website will position you as the
+              expert and build a foundation of trust between you and potential
+              customers.
+            </p>
+          </div>
+          {/* Paragraph */}
+          <div className="text-neutral-800 w-full text-lg flex flex-col gap-3 max-w-[504px]">
+            <p>
+              If you want to discover how you can stand out from the crowd and
+              become represented by a high-performing, 24/7 lead generation
+              machine, you are invited to contact me!
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Process Section */}
+      <section className="bg-neutral-800">
+        <div className="section__styles py-[72px] flex flex-col items-start text-center text-white gap-16">
+          {/* Header and line */}
+          <div className="flex flex-col text-start w-full gap-6">
+            <h2 className="heading text-3xl text-white z-[2]">
+              Understand the process
+            </h2>
+            <div className="h-[2px] bg-emerald-400 w-16 rounded-full z-[2]"></div>
+          </div>
+          {/* Steps Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full">
+            {/* Grid Item */}
+            <div className="w-full flex items-start">
+              <div className="flex flex-col w-full items-start text-start gap-2 md:max-w-[506px] lg:max-w-none">
+                <h3 className="text-xl font-bold">
+                  01 <span className="text-emerald-400">|</span> Discovery call
+                  📞{" "}
+                </h3>
+                <p className="text-lg">
+                  During this phase, I get to know you and your business. Before
+                  properly crafting your high-performing website, I need to
+                  understand your business, it’s target audience, and it’s pain
+                  points.
+                </p>
+              </div>
+            </div>
+            {/* Grid Item */}
+            <div className="w-full flex md:justify-end">
+              <div className="flex flex-col w-full items-start text-start gap-2 md:max-w-[506px] lg:max-w-none">
+                <h3 className="text-xl font-bold">
+                  02 <span className="text-emerald-400">|</span> Design phase ✍🏻
+                </h3>
+                <p className="text-lg">
+                  During this phase, I get to know you and your business. Before
+                  properly crafting your high-performing website, I need to
+                  understand your business, it’s target audience, and it’s pain
+                  points.
+                </p>
+              </div>
+            </div>
+            {/* Grid Item */}
+            <div className="w-full flex items-start">
+              <div className="flex flex-col w-full items-start text-start gap-2 md:max-w-[506px] lg:max-w-none">
+                <h3 className="text-xl font-bold">
+                  03 <span className="text-emerald-400">|</span> Building phase
+                  👨‍💻{" "}
+                </h3>
+                <p className="text-lg">
+                  During this phase, I get to know you and your business. Before
+                  properly crafting your high-performing website, I need to
+                  understand your business, it’s target audience, and it’s pain
+                  points.
+                </p>
+              </div>
+            </div>
+            {/* Grid Item */}
+            <div className="w-full flex md:justify-end items-start">
+              <div className="flex flex-col w-full items-start text-start gap-2 md:max-w-[506px] lg:max-w-none">
+                <h3 className="text-xl font-bold">
+                  04 <span className="text-emerald-400">|</span> Launch phase 🚀{" "}
+                </h3>
+                <p className="text-lg">
+                  During this phase, I get to know you and your business. Before
+                  properly crafting your high-performing website, I need to
+                  understand your business, it’s target audience, and it’s pain
+                  points.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }

@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  line-height: 146%;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+.heading{
+  letter-spacing: -1px;
+  @apply
+  leading-[120%] font-bold
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Reusables */
+.section__styles {
+  @apply  px-4 md:px-8 lg:px-10 w-full
+  sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cta-one {
+  @apply py-3 px-6 flex items-center bg-orange-600 hover:bg-orange-400 duration-100 text-white gap-2 cursor-pointer font-bold 
+}
+.button-one {
+  @apply py-3 px-6 flex items-center bg-white hover:bg-emerald-700 hover:text-white duration-100 text-emerald-700 gap-2 cursor-pointer font-bold border-[3px] border-solid border-emerald-700
 }
