@@ -7,7 +7,7 @@ export default function Home() {
       <section className="section__styles flex flex-col lg:flex-row-reverse items-center gap-8 pt-[36px] md:pt-[72px] pb-[72px]">
         {/* Hero Image Container */}
         <div className="relative aspect-square w-full">
-          <Image fill src="/../hero-image.jpg" alt="Hero Image" />
+          <Image fill src="/hero-image.jpg" alt="Hero Image" />
         </div>
         {/* Header, Paragraph, and Buttons */}
         <div className="flex flex-col w-full text-start items-start gap-8">
