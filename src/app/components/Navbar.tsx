@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="w-full bg-white py-6 border-b-[1px] border-solid">
-      <section className="section__styles flex justify-between">
+      <section className="section__styles flex justify-between items-center">
         {/* Logo */}
         <a href="#">
           <svg
@@ -23,6 +23,21 @@ function Navbar() {
             />
           </svg>
         </a>
+        {/* Desktop Nav Links */}
+        <div className="hidden lg:flex gap-8 text-neutral-800 text-md">
+          <a className="hover:text-neutral-500 duration-100" href="#">
+            Process
+          </a>
+          <a className="hover:text-neutral-500 duration-100" href="#">
+            Why it works
+          </a>
+          <a className="hover:text-neutral-500 duration-100" href="#">
+            Offers & Pricing
+          </a>
+          <a className="hover:text-neutral-500 duration-100" href="#">
+            About
+          </a>
+        </div>
         {/* Button & Menu */}
         <div className="flex items-center gap-8">
           {/* Button Link */}
@@ -42,32 +57,34 @@ function Navbar() {
             <span className="text-sm">Get in Touch</span>
           </a>
           {/* Menu Button */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="19"
-            viewBox="0 0 26 19"
-            fill="none"
-          >
-            <path
-              d="M1 1.5H25"
-              stroke="#000000"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M1 9.5H25"
-              stroke="#000000"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M1 17.5H25"
-              stroke="#000000"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-          </svg>
+          <div className="aspect-square grid place-items-center p-2 bg-neutral-200 rounded-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="19"
+              viewBox="0 0 26 19"
+              fill="none"
+            >
+              <path
+                d="M1 1.5H25"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M1 9.5H25"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M1 17.5H25"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
       </section>
     </nav>

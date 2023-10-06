@@ -187,11 +187,9 @@ export default function Home() {
       <section className="bg-neutral-800">
         <div className="section__styles py-[72px] flex flex-col items-start text-center text-white gap-16">
           {/* Header and line */}
-          <div className="flex flex-col text-start w-full gap-6">
-            <h2 className="heading text-3xl text-white z-[2]">
-              Understand the process
-            </h2>
-            <div className="h-[2px] bg-emerald-400 w-16 rounded-full z-[2]"></div>
+          <div className="header-and-line text-center items-center">
+            <h2>Understand the process</h2>
+            <div></div>
           </div>
           {/* Steps Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full">
@@ -256,6 +254,131 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Pricing Section */}
+      <div className="bg-neutral-50">
+        <section className="section__styles flex flex-col gap-8 py-[72px]">
+          <div className="header-and-line text-center items-center text-neutral-800">
+            <h2>Pricing</h2>
+            <div></div>
+          </div>
+          {/* Pricing Options Container */}
+          <div className="flex items-center justify-center w-full">
+            {/* Pricing Column */}
+            <div className="bg-white shadow-lg rounded-[32px] flex flex-col p-4 md:p-8 gap-12 w-full max-w-[544px]">
+              {/* Pilot Program round-label and paragraph */}
+              <div className="flex flex-col text-center gap-6">
+                <div className="round-label w-full bg-orange-100 text-orange-600">
+                  <p className="w-full">PILOT PROGRAM - Only 6 Spots Left!</p>
+                </div>
+                <b className="text-neutral-800">
+                  We&apos;re temporarily offering our services for a discount of
+                  90% to a limited number of clients
+                </b>
+              </div>
+              {/* Price Title and texts */}
+              <div className="flex flex-col items-center text-center">
+                <p className="text-neutral-800">
+                  Current Price per Page (Design & Development)
+                </p>
+                <div className="flex gap-2 items-center">
+                  <span className="text-xl text-neutral-500 line-through">
+                    $449
+                  </span>
+                  <span className="text-emerald-500 text-4xl">$44</span>
+                </div>
+                <p className="text-emerald-500 text-lg">
+                  PILOT DISCOUNT APPLIED
+                </p>
+              </div>
+              {/* Core Services Container */}
+              <div className="flex flex-col text-start gap-6">
+                {/* round-label */}
+                <div className="round-label bg-neutral-800 text-white text-start">
+                  Core Services
+                </div>
+                {/* Bullet Points */}
+                <div className="text-neutral-800 flex flex-col gap-4 text-lg pl-4">
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Design of a High-performing Website
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Fast, Secure, and Reliable Website Deployment
+                  </div>
+                </div>
+              </div>
+              {/* Core Services Container */}
+              <div className="flex flex-col text-start gap-6">
+                {/* round-label */}
+                <div className="round-label bg-emerald-700 text-white text-start">
+                  Features & Bonuses
+                </div>
+                {/* Bullet Points */}
+                <div className="text-neutral-800 flex flex-col gap-4 text-lg pl-4">
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Logo design
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Highly converting Sales Copywriting, turning
+                    visitors into customers
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Funnel setup between website and your
+                    preferred method of contact or payment
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Complete design system in-line with your
+                    brand & business
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Guides & training on how to easily edit
+                    content on your website whenever you want
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Design reviews from a fine arts expert with
+                    decades of professional experience
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Daily Online Support
+                  </div>
+                  <div className="flex gap-3">
+                    {" "}
+                    <span>•</span> Funnel setup between website and your
+                    preferred method of contact or payment
+                  </div>
+                </div>
+              </div>
+              {/* CTA Button */}
+              <a
+                href="#"
+                className="round-label flex gap-2 items-center justify-center hover:bg-orange-400 duration-100 bg-orange-600 text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <path
+                    d="M15.9765 12.5933L15.2499 15.7432C15.1478 16.1885 14.7564 16.5 14.2979 16.5C6.41311 16.4994 0 10.0872 0 2.20322C0 1.74512 0.311561 1.35327 0.756947 1.25171L3.90724 0.525183C4.36604 0.418876 4.83483 0.656988 5.02548 1.0914L6.47936 4.48186C6.64932 4.88121 6.53468 5.3465 6.19871 5.62086L4.51605 6.97173C5.57803 9.13475 7.33694 10.8934 9.5009 11.9559L10.8785 10.2747C11.1501 9.93783 11.6189 9.82128 12.0183 9.99424L15.4093 11.4476C15.8171 11.6621 16.0828 12.1371 15.9765 12.5933Z"
+                    fill="white"
+                  />
+                </svg>
+                Book discovery call
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

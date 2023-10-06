@@ -27,3 +27,17 @@ html{
 .button-one {
   @apply py-3 px-6 flex items-center bg-white hover:bg-emerald-700 hover:text-white duration-100 text-emerald-700 gap-2 cursor-pointer font-bold border-[3px] border-solid border-emerald-700
 }
+
+.header-and-line{
+  @apply flex flex-col w-full gap-6
+}
+.header-and-line > h2 {
+  @apply heading text-3xl z-[2]
+}
+.header-and-line > div {
+  @apply h-[2px] bg-emerald-400 w-16 rounded-full z-[2]
+}
+/* Round Label */
+.round-label {
+  @apply text-lg px-8 py-4 rounded-full font-bold
+}
