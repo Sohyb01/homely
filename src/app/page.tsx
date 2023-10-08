@@ -379,6 +379,134 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <section className="section__styles grid grid-cols-1 md:grid-cols-2 py-[72px] md:gap-8">
+        {/* Questions Column */}
+        <div className="flex flex-col">
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Questions Column */}
+        <div className="flex flex-col">
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          {/* Question */}
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
+          >
+            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
+              Question Text Goes Here
+            </div>
+            <div className="collapse-content text-neutral-600 px-0">
+              <p>
+                Question Answer Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
