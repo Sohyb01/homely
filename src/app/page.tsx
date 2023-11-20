@@ -70,7 +70,10 @@ export default function Home() {
         </section>
       </div>
       {/* High Performing Section */}
-      <section className="section__styles flex flex-col lg:flex-row items-start pt-[36px] pb-[72px] relative lg:gap-12">
+      <section
+        id="why-it-works"
+        className="section__styles flex flex-col lg:flex-row items-start pt-[36px] pb-[72px] relative lg:gap-12"
+      >
         {/* Side Banner */}
         <div className="hidden lg:flex bg-emerald-900 w-full p-[32px] pl-10 rounded-[16px]">
           {/* Header, Divider, Paragraph */}
@@ -184,7 +187,7 @@ export default function Home() {
         </div>
       </section>
       {/* Process Section */}
-      <section className="bg-neutral-800">
+      <section id="process" className="bg-neutral-800">
         <div className="section__styles py-[72px] flex flex-col items-start text-center text-white gap-16">
           {/* Header and line */}
           <div className="header-and-line text-center items-center">
@@ -255,7 +258,7 @@ export default function Home() {
         </div>
       </section>
       {/* Pricing Section */}
-      <div className="bg-neutral-50">
+      <div id="pricing" className="bg-neutral-50">
         <section className="section__styles flex flex-col gap-8 py-[72px]">
           <div className="header-and-line text-center items-center text-neutral-800">
             <h2>Pricing</h2>
@@ -380,7 +383,10 @@ export default function Home() {
         </section>
       </div>
       {/* FAQ Section */}
-      <section className="section__styles grid grid-cols-1 md:grid-cols-2 py-[72px] md:gap-8 text-lg">
+      <section
+        id="faq"
+        className="section__styles grid grid-cols-1 md:grid-cols-2 py-[72px] md:gap-8 text-lg"
+      >
         {/* Questions Column */}
         <div className="flex flex-col">
           {/* Question */}

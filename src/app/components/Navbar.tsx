@@ -25,17 +25,20 @@ function Navbar() {
         </a>
         {/* Desktop Nav Links */}
         <div className="hidden lg:flex gap-8 text-neutral-800 text-md">
-          <a className="hover:text-neutral-500 duration-100" href="#">
-            Process
-          </a>
-          <a className="hover:text-neutral-500 duration-100" href="#">
+          <a
+            className="hover:text-neutral-500 duration-100"
+            href="#why-it-works"
+          >
             Why it works
           </a>
-          <a className="hover:text-neutral-500 duration-100" href="#">
+          <a className="hover:text-neutral-500 duration-100" href="#process">
+            Process
+          </a>
+          <a className="hover:text-neutral-500 duration-100" href="#pricing">
             Offers & Pricing
           </a>
-          <a className="hover:text-neutral-500 duration-100" href="#">
-            About
+          <a className="hover:text-neutral-500 duration-100" href="#faq">
+            FAQ
           </a>
         </div>
         {/* Button & Menu */}
@@ -54,36 +57,64 @@ function Navbar() {
                 fill="white"
               />
             </svg>
-            <span className="text-sm">Get in Touch</span>
+            <span className="text-sm w-[10ch] text-center">Get in Touch</span>
           </a>
           {/* Menu Button */}
-          <div className="aspect-square grid place-items-center p-2 bg-neutral-200 rounded-3 lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="19"
-              viewBox="0 0 26 19"
-              fill="none"
-            >
-              <path
-                d="M1 1.5H25"
-                stroke="#000000"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M1 9.5H25"
-                stroke="#000000"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M1 17.5H25"
-                stroke="#000000"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-            </svg>
+          <div className="aspect-square grid place-items-center p-2 rounded-3 lg:hidden drawer drawer-end">
+            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="19"
+                  viewBox="0 0 26 19"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1.5H25"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M1 9.5H25"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M1 17.5H25"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div className="drawer-side z-10">
+              <label
+                htmlFor="my-drawer-4"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 w-80 min-h-full bg-neutral-100 text-md text-neutral-800">
+                {/* Sidebar content here */}
+                <li>
+                  <a href="#why-it-works">Why it works</a>
+                </li>
+                <li>
+                  <a href="#process">Process</a>
+                </li>
+                <li>
+                  <a href="#pricing">Offers & Pricing</a>
+                </li>
+                <li>
+                  <a href="#faq">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
