@@ -57,7 +57,7 @@ function Navbar() {
             <span className="text-sm">Get in Touch</span>
           </a>
           {/* Menu Button */}
-          <div className="aspect-square grid place-items-center p-2 bg-neutral-200 rounded-3">
+          <div className="aspect-square grid place-items-center p-2 bg-neutral-200 rounded-3 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -68,20 +68,20 @@ function Navbar() {
               <path
                 d="M1 1.5H25"
                 stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M1 9.5H25"
                 stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M1 17.5H25"
                 stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
             </svg>
           </div>

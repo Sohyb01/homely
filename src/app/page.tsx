@@ -264,7 +264,7 @@ export default function Home() {
           {/* Pricing Options Container */}
           <div className="flex items-center justify-center w-full">
             {/* Pricing Column */}
-            <div className="bg-white shadow-lg rounded-[32px] flex flex-col p-4 md:p-8 gap-12 w-full max-w-[544px]">
+            <div className="bg-white shadow-lg rounded-[32px] flex flex-col p-4 md:p-8 gap-12 w-full max-w-[544px] text-lg">
               {/* Pilot Program round-label and paragraph */}
               <div className="flex flex-col text-center gap-6">
                 <div className="round-label w-full bg-orange-100 text-orange-600">
@@ -312,7 +312,7 @@ export default function Home() {
               <div className="flex flex-col text-start gap-6">
                 {/* round-label */}
                 <div className="round-label bg-emerald-700 text-white text-start">
-                  Features & Bonuses
+                  BONUSES
                 </div>
                 {/* Bullet Points */}
                 <div className="text-neutral-800 flex flex-col gap-4 text-lg pl-4">
@@ -379,7 +379,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="section__styles grid grid-cols-1 md:grid-cols-2 py-[72px] md:gap-8">
+      {/* FAQ Section */}
+      <section className="section__styles grid grid-cols-1 md:grid-cols-2 py-[72px] md:gap-8 text-lg">
         {/* Questions Column */}
         <div className="flex flex-col">
           {/* Question */}
@@ -387,13 +388,15 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              What does your agency specialize in?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                We specialize in creating custom website designs specifically
+                tailored for home renovation businesses. Our focus is on
+                providing unique, user-friendly, and visually appealing
+                websites.
               </p>
             </div>
           </div>
@@ -402,13 +405,14 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              How long does the website design process take?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                The timeframe can vary based on the complexity of the project
+                and client requirements. Typically, our process takes between 4
+                to 8 weeks from initial concept to a fully functional website.
               </p>
             </div>
           </div>
@@ -417,13 +421,14 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              Do you offer maintenance services after the website is completed?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Yes, we offer ongoing maintenance services to ensure your
+                website stays updated, secure, and functions optimally. We also
+                provide support for any issues that may arise.
               </p>
             </div>
           </div>
@@ -432,13 +437,15 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              Can you integrate features like project galleries or client
+              testimonials on the website?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Absolutely! We can incorporate various features such as project
+                portfolios, client testimonials, before-and-after images, and
+                more to showcase your work effectively.
               </p>
             </div>
           </div>
@@ -450,13 +457,14 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              Do you optimize websites for search engines (SEO)?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Yes, we optimize websites to improve their visibility on search
+                engines. Our aim is to help your business rank higher and
+                attract more relevant traffic.
               </p>
             </div>
           </div>
@@ -465,13 +473,15 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              What sets your agency apart from others in the industry?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Our agency stands out due to our focus on the home renovation
+                niche, our commitment to customized solutions, attention to
+                detail, and dedication to providing exceptional customer
+                service.
               </p>
             </div>
           </div>
@@ -480,13 +490,14 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              Do you create responsive designs that work on mobile devices?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Absolutely! All the websites we design are responsive, ensuring
+                they function seamlessly on various devices, including
+                smartphones and tablets.
               </p>
             </div>
           </div>
@@ -495,13 +506,14 @@ export default function Home() {
             tabIndex={0}
             className="collapse collapse-arrow border-t-[2px] border-solid border-neutral-800 rounded-none"
           >
-            <div className="collapse-title text-md text-neutral-800 font-bold py-5 px-0">
-              Question Text Goes Here
+            <div className="collapse-title text-neutral-800 font-bold py-5 px-0">
+              Can we have input in the design process?
             </div>
             <div className="collapse-content text-neutral-600 px-0">
               <p>
-                Question Answer Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Absolutely, we encourage client input throughout the design
+                process. Your feedback and ideas are invaluable in creating a
+                website that aligns with your vision and goals.
               </p>
             </div>
           </div>
